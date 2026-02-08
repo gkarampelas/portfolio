@@ -1,0 +1,82 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+    font-family: sans-serif;
+    height: 40px;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+}
+
+.btn .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn .icon svg {
+    stroke: var(--color-primary);
+    fill: transparent;
+}
+
+.btn .icon svg path {
+    fill: transparent;
+}
+
+.btn .label ::slotted(*) {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*FOR PROPERTY SHAPE*/
+app-button[shape="circle"] .btn {
+    border-radius: 9999px;
+}
+
+/*FOR PROPERTY OUTLINED*/
+app-button[variant="outlined"] .btn {
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+app-button[variant="outlined"]:hover .btn {
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+    border: 1px solid var(--color-surface);
+}
+
+app-button[variant="outlined"]:hover .btn .icon svg {
+    stroke: var(--color-surface);
+}
+
+/*FOR PROPERTY FILLED*/
+app-button[variant="filled"] .btn {
+    background-color: var(--color-primary);
+    color: var(--color-surface);
+}
+
+app-button[variant="filled"] .btn .icon svg {
+    stroke: var(--color-surface);
+}
+
+/*FOR PROPERTY RAISED*/
+app-button[raised]:hover .btn {
+    transform: translateY(-2px);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    box-shadow:
+            color-mix(in srgb, var(--color-primary), transparent 85%) 0 20px 25px -5px,
+            color-mix(in srgb, var(--color-primary), transparent 95%) 0 8px 10px -6px;
+}
