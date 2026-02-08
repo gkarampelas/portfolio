@@ -4,54 +4,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gkarampelas</title>
-    <link rel="icon" href="/favicon.ico" />
-  <script type="module" crossorigin src="/assets/index-Bknfx1SM.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-BdZFnGLr.css">
+    <link rel="icon" href="/favicon.ico"/>
+<script src="https://unpkg.com/feather-icons"></script>
+  <script type="module" crossorigin src="/assets/index-DKnDkRh8.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-1RuQGwYI.css">
 </head>
 <body>
 <main>
     <app-header></app-header>
-    <p>Hi, I am George,
-        I am a Software Engineer, I am 25 years old, and I live in Athens, Greece. I am passionate about building
-        software with Java (aka Spring Boot). I am also a big fan of clean code and best practices. I like to use TDD
-        for my projects, but I don't want to overdo it. I am trying to find the balance between the TDD and the
-        deadline. My strong asset is the ability to focus on a problem and solve it quickly, efficiently, and with
-        minimal effort. This is my personal portfolio and my blog too, where I share pitfalls that I have been fallen or
-        any topic that I found useful. </p>
+    <app-hero></app-hero>
+    <div class="image-divider"></div>
+    <div class="content">
+        <p>Hi, I am George,
+            I am a Software Engineer, I am 25 years old, and I live in Athens, Greece. I am passionate about building
+            software with Java (aka Spring Boot). I am also a big fan of clean code and best practices. I like to use
+            TDD
+            for my projects, but I don't want to overdo it. I am trying to find the balance between the TDD and the
+            deadline. My strong asset is the ability to focus on a problem and solve it quickly, efficiently, and with
+            minimal effort. This is my personal portfolio and my blog too, where I share pitfalls that I have been
+            fallen or
+            any topic that I found useful. </p>
 
-    <div class="card-container">
-        <h1>Work experience:</h1>
-        <app-card>
-            <span slot="title">Software Engineer</span>
-            <span slot="subtitle">iKnowHow S.A, Athens</span>
-            <span slot="body">At iKnowhow S.A., I work as a Software Engineer developing and maintaining backend systems using Spring Boot. I contribute to building REST APIs for Digital Government projects, implementing secure and maintainable code using Java and the Spring ecosystem. </span>
-            <span slot="footer">Jul 2023 - Aug 2025</span>
-        </app-card>
+        <div class="card-container">
+            <h1>Work experience:</h1>
+            <app-card>
+                <span slot="title">Software Engineer</span>
+                <span slot="subtitle">iKnowHow S.A, Athens</span>
+                <span slot="body">At iKnowhow S.A., I work as a Software Engineer developing and maintaining backend systems using Spring Boot. I contribute to building REST APIs for Digital Government projects, implementing secure and maintainable code using Java and the Spring ecosystem. </span>
+                <span slot="footer">Jul 2023 - Aug 2025</span>
+            </app-card>
+        </div>
+
+        <div class="card-container">
+            <h1>Certifications:</h1>
+            <app-card>
+                <span slot="title">B. Sc. in Computer Science</span>
+                <span slot="body">Athens University of Economics and Business</span>
+                <span slot="footer">Sept 2018 - Jan 2024</span>
+            </app-card>
+            <app-card>
+                <span slot="title">TDD With Spring Boot Done Right</span>
+                <span slot="body">Philip Riecks</span>
+                <span slot="footer">Sept 2023</span>
+                <a slot="action" target="_blank" href="files/TDDWithSpringBootDoneRight.pdf">Download</a>
+            </app-card>
+            <app-card>
+                <span slot="title">Docker & Kubernetes: The Practical Guide</span>
+                <span slot="body">Maximilian Schwarzmuller</span>
+                <span slot="footer">Jun 2025</span>
+                <a slot="action" target="_blank" href="files/DockerKubernetes.pdf">Download</a>
+            </app-card>
+            <app-card>
+                <span slot="title">B. Sc. in Computer Science</span>
+                <span slot="body">Athens University of Economics and Business</span>
+                <span slot="footer">Sept 2018 - Jan 2024</span>
+            </app-card>
+            <app-card>
+                <span slot="title">TDD With Spring Boot Done Right</span>
+                <span slot="body">Philip Riecks</span>
+                <span slot="footer">Sept 2023</span>
+                <a slot="action" target="_blank" href="files/TDDWithSpringBootDoneRight.pdf">Download</a>
+            </app-card>
+            <app-card>
+                <span slot="title">Docker & Kubernetes: The Practical Guide</span>
+                <span slot="body">Maximilian Schwarzmuller</span>
+                <span slot="footer">Jun 2025</span>
+                <a slot="action" target="_blank" href="files/DockerKubernetes.pdf">Download</a>
+            </app-card>
+
+        </div>
+
+        <div>
+
+        </div>
+
+        <app-button id="contact" shape="circle" icon="github">
+<!--            <i slot="icon" data-feather="github"></i>-->
+            <div slot="label">Find me on GitHub</div>
+        </app-button>
     </div>
-
-    <div class="card-container">
-        <h1>Certifications:</h1>
-        <app-card>
-            <span slot="title">B. Sc. in Computer Science</span>
-            <span slot="body">Athens University of Economics and Business</span>
-            <span slot="footer">Sept 2018 - Jan 2024</span>
-        </app-card>
-        <app-card>
-            <span slot="title">TDD With Spring Boot Done Right</span>
-            <span slot="body">Philip Riecks</span>
-            <span slot="footer">Sept 2023</span>
-            <a slot="action" target="_blank" href="files/TDDWithSpringBootDoneRight.pdf">Download</a>
-        </app-card>
-        <app-card>
-            <span slot="title">Docker & Kubernetes: The Practical Guide</span>
-            <span slot="body">Maximilian Schwarzmuller</span>
-            <span slot="footer">Jun 2025</span>
-            <a slot="action" target="_blank" href="files/DockerKubernetes.pdf">Download</a>
-        </app-card>
-
-    </div>
-
 
 </main>
+<script>
+    feather.replace()
+</script>
 </body>
 </html>
