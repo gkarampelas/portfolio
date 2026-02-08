@@ -43,16 +43,16 @@
 </header>\r
 \r
 \r
-`;class f extends HTMLElement{constructor(){super(),this.innerHTML=`<style>${b}</style>${m}`}connectedCallback(){const r=this.querySelector(".menu-btn"),t=this.querySelector(".nav"),o=this.querySelector(".header");!r||!t||(r.addEventListener("click",()=>{const e=t.classList.toggle("active");r.classList.toggle("active",e)}),this._onScroll=()=>{o.classList.toggle("scrolled",window.scrollY>0)},window.addEventListener("scroll",this._onScroll),feather.replace())}disconnectedCallback(){window.removeEventListener("scroll",this._onScroll)}}customElements.define("app-header",f);const v=".hero-section{min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle,#1e2b4a 0%,var(--color-bg) 100%);padding:0 20px}.hero{max-width:var(--content-max-width);text-align:center;display:flex;flex-direction:column;gap:16px}.hero h1{font-size:5rem;margin:0}.name{-webkit-background-clip:text;background-clip:text;color:transparent;background-image:linear-gradient(to right,var(--color-primary),#7209b7)}ul{list-style-type:none;padding:0;margin:0}ul li{display:inline;background-color:color-mix(in srgb,var(--color-bg),transparent 70%);padding:10px 20px;border-radius:75px;margin:0 5px;border:1px solid var(--border-color-transparent)}.description{font-size:1.2rem}.hero-button{display:flex;flex-direction:row;gap:10px;align-items:center;justify-content:center;width:100%}.arrow-down{align-self:center;margin-top:50px;opacity:0}.bounce{animation:bounceIn 2s infinite 2s}@keyframes bounceIn{0%,20%,50%,80%,to{transform:translateY(0);opacity:1}40%{transform:translateY(-20px)}60%{transform:translateY(-15px)}}",g=`<section class="hero-section">\r
+`;class f extends HTMLElement{constructor(){super(),this.innerHTML=`<style>${b}</style>${m}`}connectedCallback(){const r=this.querySelector(".menu-btn"),t=this.querySelector(".nav"),o=this.querySelector(".header");!r||!t||(r.addEventListener("click",()=>{const e=t.classList.toggle("active");r.classList.toggle("active",e)}),this._onScroll=()=>{o.classList.toggle("scrolled",window.scrollY>0)},window.addEventListener("scroll",this._onScroll),feather.replace())}disconnectedCallback(){window.removeEventListener("scroll",this._onScroll)}}customElements.define("app-header",f);const v=".hero-section{min-height:100vh;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle,#1e2b4a 0%,var(--color-bg) 100%);padding:0 20px}.hero{max-width:var(--content-max-width);text-align:center;display:flex;flex-direction:column;gap:16px}.hero h1{font-size:5rem;margin:0}.name{-webkit-background-clip:text;background-clip:text;color:transparent;background-image:linear-gradient(to right,var(--color-primary),#7209b7)}.chips{display:flex;flex-direction:row;flex-wrap:wrap;align-items:center;justify-content:center;padding:0;margin:0}.chips .chip{display:inline;background-color:color-mix(in srgb,var(--color-bg),transparent 70%);padding:10px 20px;border-radius:75px;margin:5px;border:1px solid var(--border-color-transparent)}.description{font-size:1.2rem}.hero-button{display:flex;flex-direction:row;gap:10px;align-items:center;justify-content:center;width:100%}.arrow-down{align-self:center;margin-top:50px;opacity:0}.bounce{animation:bounceIn 2s infinite 2s}@keyframes bounceIn{0%,20%,50%,80%,to{transform:translateY(0);opacity:1}40%{transform:translateY(-20px)}60%{transform:translateY(-15px)}}",g=`<section class="hero-section">\r
     <div class="hero">\r
         <h1>Hi, I'm <span class="name">George</span></h1>\r
         <h2>Backend Software Engineer</h2>\r
-        <ul>\r
-            <li>Java</li>\r
-            <li>Spring Boot</li>\r
-            <li>Docker</li>\r
-            <li>REST APIs</li>\r
-        </ul>\r
+        <div class="chips">\r
+            <div class="chip">Java</div>\r
+            <div class="chip">Spring Boot</div>\r
+            <div class="chip">Docker</div>\r
+            <div class="chip">REST APIs</div>\r
+        </div>\r
         <p class="description">\r
             Building robust, scalable backend systems with clean code and best practices. Loving to learn new\r
             technologies.\r
