@@ -49,14 +49,18 @@ body {
 
 .image-divider {
     background-image: url('/images/buildings.jpg');
-
-
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
-
     width: 100%;
     min-height: 400px;
+    background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+    .image-divider {
+        min-height: 300px;
+    }
 }
 
 .anchor-unstyled {
