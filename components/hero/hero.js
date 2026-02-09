@@ -10,10 +10,6 @@ class Hero extends HTMLElement {
     connectedCallback() {
         feather.replace();
     }
-
-    disconnectedCallback() {
-
-    }
 }
 
 customElements.define('app-hero', Hero);

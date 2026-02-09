@@ -1,0 +1,33 @@
+.about-section {
+    margin: 0;
+    background-color: var(--color-secondary);
+    font-size: 1rem;
+    padding: 40px 0;
+}
+
+.about-content {
+    margin: 0 auto;
+    max-width: var(--content-max-width);
+    padding: 0 20px;
+}
+
+.about-comment {
+    color: var(--color-primary);
+    font-family: 'Fira Code', 'JetBrains Mono', 'Source Code Pro', monospace;
+}
+
+.about-me {
+    margin-bottom: 40px;
+}
+
+
+.about-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.about-cards > * {
+    display: block;
+    margin-bottom: 20px;
+}

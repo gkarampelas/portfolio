@@ -11,9 +11,11 @@
     --color-text-primary: #A1A1AA;
     --color-text-secondary: #f8fafc;
     --color-header: #070c16;
+    --color-card-background: #0b111e;
     --max-width: 1080px;
     --content-max-width: 720px;
     --border-color-transparent: rgba(63, 63, 67, 0.5);
+    --border-color-secondary-transparent: rgba(13, 162, 231, 0.5);
 }
 
 @supports (font-variation-settings: normal) {
@@ -29,12 +31,13 @@ html, body {
     padding: 0;
     overflow-x: clip;
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 1.1rem;
     background-color: var(--color-bg);
     color: var(--color-text-primary);
 }
 
 .content {
-    max-width: 720px;
+    max-width: var(--content-max-width);
     margin: 0 auto;
 }
 
@@ -43,10 +46,17 @@ html, body {
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
 
+.gradient-text {
+    background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, var(--color-primary), #7209b7);
 }
 
 .image-divider {
+    margin: 0;
+    padding: 0;
     background-image: url('/images/buildings.jpg');
     background-size: cover;
     background-position: center;

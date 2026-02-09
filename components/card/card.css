@@ -1,37 +1,24 @@
 .card {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 12px;
     padding: 16px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--border-color-transparent);
     border-radius: 12px;
+    background-color: var(--color-card-background);
 }
 
-.card-title {
-    font-size: 1.2rem;
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--border-color-secondary-transparent);
 }
 
-.card-sub {
-    color: #666;
-    font-size: 0.9rem;
+#title-card {
+    color: var(--color-text-secondary);
+    margin: 0;
 }
 
-/* Style slotted links inside card */
-.card-action ::slotted(a) {
-    color: inherit;       /* default link color */
-    text-decoration: none; /* remove underline by default */
-    cursor: pointer;
-    font-weight: 500;
-}
-
-/* Underline on hover */
-.card-action ::slotted(a:hover) {
-    text-decoration: underline;
-}
-
-/* Keep same color on visited */
-.card-action ::slotted(a:visited) {
-    color: inherit;
-    text-decoration: none;
+#body-card {
+    margin: 0;
 }

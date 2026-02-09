@@ -16,7 +16,7 @@
 }
 
 .terminal-path {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Fira Code', 'JetBrains Mono', 'Source Code Pro', monospace;
     display: inline-block;
     width: fit-content;
     margin: 0 auto;
@@ -43,12 +43,6 @@
     margin: 0;
 }
 
-.name {
-    background-clip: text;
-    color: transparent;
-    background-image: linear-gradient(to right, var(--color-primary), #7209b7);
-}
-
 .chips {
     display: flex;
     flex-direction: row;
@@ -66,10 +60,6 @@
     border-radius: 75px;
     margin: 5px;
     border: 1px solid var(--border-color-transparent)
-}
-
-.description {
-    font-size: 1.2rem;
 }
 
 .hero-button {

@@ -2,21 +2,12 @@ import sheet from './button.css?inline';
 import html from './button.html?raw';
 
 class AppButton extends HTMLElement {
-    constructor() {
-        super();
-        // this.innerHTML = `<style>${sheet}</style>${html}`;
-    }
 
     connectedCallback() {
         this.innerHTML = `<style>${sheet}</style>${html}`;
         this.#renderIcon();
         this.#renderLabel();
         this.#renderHref();
-        feather.replace({ root: this });
-    }
-
-    disconnectedCallback() {
-
     }
 
     #renderIcon() {
