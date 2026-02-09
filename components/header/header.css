@@ -31,14 +31,6 @@
     color: var(--color-text-secondary);
 }
 
-.logo {
-    color: var(--color-text-secondary);
-}
-
-.tag {
-    color: var(--color-primary);
-}
-
 .menu-btn {
     display: none;
     background: none;

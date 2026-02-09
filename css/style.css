@@ -36,6 +36,14 @@ html, body {
     color: var(--color-text-primary);
 }
 
+.logo {
+    color: var(--color-text-secondary);
+}
+
+.tag {
+    color: var(--color-primary);
+}
+
 .content {
     max-width: var(--content-max-width);
     margin: 0 auto;
