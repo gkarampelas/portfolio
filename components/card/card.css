@@ -14,6 +14,34 @@
     border: 1px solid var(--border-color-secondary-transparent);
 }
 
+.card svg {
+    stroke: var(--color-primary);
+    fill: transparent;
+}
+
+.card svg path {
+    fill: transparent;
+}
+
+.card:hover svg {
+    stroke: var(--color-secondary);
+}
+
+.card-icon-wrapper {
+    padding: 12px;
+    background-color: var(--color-secondary);
+    width: fit-content;
+    border-radius: 12px;
+    transition: background-color 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover .card-icon-wrapper {
+    background-color: var(--color-primary);
+}
+
 #title-card {
     color: var(--color-text-secondary);
     margin: 0;
