@@ -31,9 +31,43 @@ html, body {
     padding: 0;
     overflow-x: clip;
     font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    font-size: 1.1rem;
     background-color: var(--color-bg);
     color: var(--color-text-primary);
+}
+
+:root {
+    /* Adjust these variables to change your scale globally */
+    --font-base-scale: 1vw + 1rem;
+}
+
+h1 {
+    /* Min: 2.5rem, Scalable: 8vw, Max: 4.5rem */
+    font-size: clamp(2.5rem, 8vw, 4.5rem);
+    line-height: 1.1;
+}
+
+h2 {
+    /* Min: 2rem, Scalable: 6vw, Max: 3.5rem */
+    font-size: clamp(2rem, 6vw, 3.5rem);
+    line-height: 1.2;
+}
+
+h3 {
+    /* Min: 1.75rem, Scalable: 4vw, Max: 2.5rem */
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    line-height: 1.3;
+}
+
+h4 {
+    /* Min: 1.25rem, Scalable: 3vw, Max: 1.75rem */
+    font-size: clamp(1.25rem, 3vw, 1.75rem);
+    line-height: 1.4;
+}
+
+p, li {
+    /* Min: 1rem, Scalable: 1vw + 0.5rem, Max: 1.25rem */
+    font-size: clamp(1rem, 1vw + 0.5rem, 1.25rem);
+    line-height: 1.6;
 }
 
 .logo {
@@ -48,7 +82,6 @@ html, body {
     margin: 0;
     color: var(--color-primary);
     font-family: 'Fira Code', 'JetBrains Mono', 'Source Code Pro', monospace;
-    font-size: 1rem;
 }
 
 .content {
@@ -86,6 +119,10 @@ html, body {
 
 .image-two {
     background-image: url('/images/galaxias.jpg');
+}
+
+.image-three {
+    background-image: url('/images/bus.jpg');
 }
 
 @media (max-width: 768px) {

@@ -2,27 +2,39 @@ import sheet from "./card.css?inline";
 import html from "./card.html?raw";
 
 class AppCard extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `<style>${sheet}</style>${html}`;
-        this.#renderIcon();
-        this.#renderTitle();
-        this.#renderBody();
+
+    constructor() {
+        super();
+        this.attachShadow({mode: 'open'});
     }
 
+    connectedCallback() {
+        this.shadowRoot.innerHTML = `
+            <style>${sheet}</style>
+            ${html}
+        `;
+        this.#renderIcon();
+        this.#renderTitle();
+        if (window.feather) {
+            window.feather.replace({root: this.shadowRoot});
+        }
+    }
+
+
     #renderIcon() {
-        const iconElement = this.querySelector('#icon-card');
+        const iconElement = this.shadowRoot.querySelector('#icon-card');
         const icon = this.getAttribute('icon');
 
         if (!icon) {
-            iconElement.remove();
+            iconElement?.remove();
             return;
         }
 
-        iconElement.setAttribute('data-feather', icon);
+        iconElement.innerHTML = window.feather.icons[icon].toSvg();
     }
 
     #renderTitle() {
-        const hElement = this.querySelector('#title-card');
+        const hElement = this.shadowRoot.querySelector('#title-card');
         const title = this.getAttribute('title');
 
         if (!title) {
@@ -30,17 +42,6 @@ class AppCard extends HTMLElement {
             return;
         }
         hElement.innerHTML = title;
-    }
-
-    #renderBody() {
-        const pElement = this.querySelector('#body-card');
-        const body = this.getAttribute('body');
-
-        if (!body) {
-            pElement.remove();
-            return;
-        }
-        pElement.innerHTML = body;
     }
 }
 

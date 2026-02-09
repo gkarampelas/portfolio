@@ -15,14 +15,14 @@ footer {
 
 .footer-logo {
     color: var(--color-text-secondary);
-    font-size: 1rem;
 }
 
 .footer-copyright {
     color: var(--color-text-primary);
-    font-size: 0.8rem;
 }
 
-.footer-skills {
-    font-size: 0.8rem;
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
 }

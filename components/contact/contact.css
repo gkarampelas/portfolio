@@ -1,22 +1,28 @@
-section {
-    padding: 20px;
-    width: 100%;
+.contact-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 16px;
+    padding: 0 40px;
 }
 
-.contact-header {
+.contact-comment {
+    margin-top: 40px;
+}
+
+.contact-header,
+.contact-subheader {
     margin: 0;
+    text-align: center;
 }
 
 .contact-container {
-    width: var(--content-max-width);
+    width: 100%;
+    max-width: var(--content-max-width);
     background-color: var(--color-secondary);
-    padding: 40px;
-    margin: 40px;
+    padding: 20px;
+    margin: 20px;
     border: 1px solid var(--border-color-transparent);
     border-radius: 12px;
 }
@@ -32,15 +38,13 @@ section {
     align-items: center;
     justify-content: center;
     width: 100%;
-    /*background-color: var(--color-bg);*/
-    /*border: 1px solid var(--border-color-transparent);*/
     border-radius: 12px;
     padding: 8px 16px;
     margin-bottom: 16px;
+    word-break: break-word;
 }
 
 .contact-details-subtitle {
-    font-size: 0.8rem;
     margin: 0;
 }
 
