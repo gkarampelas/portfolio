@@ -44,6 +44,13 @@ html, body {
     color: var(--color-primary);
 }
 
+.code-comment {
+    margin: 0;
+    color: var(--color-primary);
+    font-family: 'Fira Code', 'JetBrains Mono', 'Source Code Pro', monospace;
+    font-size: 1rem;
+}
+
 .content {
     max-width: var(--content-max-width);
     margin: 0 auto;
@@ -65,13 +72,20 @@ html, body {
 .image-divider {
     margin: 0;
     padding: 0;
-    background-image: url('/images/buildings.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     min-height: 400px;
     background-attachment: fixed;
+}
+
+.image-one {
+    background-image: url('/images/buildings.jpg');
+}
+
+.image-two {
+    background-image: url('/images/galaxias.jpg');
 }
 
 @media (max-width: 768px) {

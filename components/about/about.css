@@ -11,11 +11,6 @@
     padding: 0 20px;
 }
 
-.about-comment {
-    color: var(--color-primary);
-    font-family: 'Fira Code', 'JetBrains Mono', 'Source Code Pro', monospace;
-}
-
 .about-me {
     margin-bottom: 40px;
 }
