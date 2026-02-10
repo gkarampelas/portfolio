@@ -1,0 +1,26 @@
+.skill-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.skill-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.skill-progress {
+    width: 100%;
+    border-radius: 8px;
+    background-color: var(--color-surface);
+}
+
+.skill-progress-bar {
+    background: linear-gradient(to right, var(--color-primary), #7209b7);
+    height: 10px;
+    border-radius: 8px;
+}

@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 20px;
+    padding: 20px;
     box-sizing: border-box;
     word-break: break-word;
 }
@@ -31,4 +31,12 @@
     width: 100%;
     line-height: 1.6;
     text-align: center;
+}
+
+.skills-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    align-items: stretch;
 }
