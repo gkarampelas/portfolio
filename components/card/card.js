@@ -1,5 +1,6 @@
 import sheet from "./card.css?inline";
 import html from "./card.html?raw";
+import feather from "feather-icons"
 
 class AppCard extends HTMLElement {
 
@@ -15,9 +16,7 @@ class AppCard extends HTMLElement {
         `;
         this.#renderIcon();
         this.#renderTitle();
-        if (window.feather) {
-            window.feather.replace({root: this.shadowRoot});
-        }
+        feather.replace({root: this.shadowRoot});
     }
 
 
@@ -30,7 +29,7 @@ class AppCard extends HTMLElement {
             return;
         }
 
-        iconElement.innerHTML = window.feather.icons[icon].toSvg();
+        iconElement.innerHTML = feather.icons[icon].toSvg();
     }
 
     #renderTitle() {
