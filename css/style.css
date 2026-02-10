@@ -122,7 +122,11 @@ p, li {
 }
 
 .image-three {
-    background-image: url('/images/bus.jpg');
+    background-image: url('/images/bus.jpeg');
+}
+
+.image-four {
+    background-image: url('/images/lights-on-building.jpg');
 }
 
 @media (max-width: 768px) {

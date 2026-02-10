@@ -1,0 +1,34 @@
+.education-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.education-content {
+    width: var(--content-max-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+
+.education-header {
+    text-align: center;
+}
+
+
+
+.education-description {
+    color: var(--color-text-secondary);
+}
+
+.education-date {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+}
