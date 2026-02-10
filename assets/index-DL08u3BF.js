@@ -82,6 +82,9 @@
                 <a href="https://github.com/gkarampelas" target="_blank">\r
                     <i data-feather="github"></i>\r
                 </a>\r
+                <a href="https://gitlab.com/Karampelas-26" target="_blank">\r
+                    <i data-feather="gitlab"></i>\r
+                </a>\r
             </div>\r
         </div>\r
 \r
