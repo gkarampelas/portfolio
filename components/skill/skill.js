@@ -13,7 +13,6 @@ class Skill extends HTMLElement {
         if (!skill || !percentage) return;
 
         this.querySelector('.skill-name').innerHTML = skill;
-        this.querySelector('.skill-percentage').innerHTML = `${percentage}%`;
         this.querySelector('.skill-progress-bar').style.width = `${percentage}%`;
     }
 }
